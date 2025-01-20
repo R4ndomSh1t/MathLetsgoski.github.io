@@ -1,4 +1,4 @@
-# Italian Math (1st to 3rd Superior)  
+# Italian Math (1st to 3rd Superior - Work in progress)  
 
 This repository contains educational materials for teaching and learning mathematics in Italian, designed for students from 1st to 3rd superior.  
 
@@ -29,3 +29,5 @@ Created and maintained by R4ndomSh1t.
 
 ## Disclaimer  
 This content is provided "as is" without any guarantees. Always verify the accuracy before using it for teaching or professional purposes.  
+
+(The site is still incomplete and it's yet to be furthermore developed) 
