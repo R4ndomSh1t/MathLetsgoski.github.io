@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemi Lineari - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Seconda Superiore</a>
+                <div class="dropdown-content">
+                    <a href="radicali.html">Radicali</a>
+                    <a href="sistemi-lineari.html">Sistemi Lineari</a>
+                    <a href="geometria-analitica.html">Geometria Analitica</a>
+                    <a href="secondo-grado.html">Equazioni II Grado</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Sistemi Lineari</h1>
+
+        <!-- INTRODUZIONE -->
+        <section class="teoria">
+            <h2>Sistemi di Equazioni in Due Incognite</h2>
+            <p>Un sistema lineare di due equazioni in due incognite è un insieme di equazioni di primo grado che devono essere verificate contemporaneamente:</p>
+            <div class="formula-card">
+                <div class="formula">
+                    \[\begin{cases} 
+                    ax + by = c \\
+                    dx + ey = f
+                    \end{cases}\]
+                </div>
+                <p>dove a, b, c, d, e, f sono coefficienti reali e x, y sono le incognite.</p>
+            </div>
+        </section>
+
+        <!-- CLASSIFICAZIONE -->
+        <section class="teoria">
+            <h2>Classificazione dei Sistemi</h2>
+            
+            <div class="formula-card">
+                <h3>Sistema Determinato</h3>
+                <p>Ha una e una sola soluzione. Graficamente, le rette si intersecano in un punto.</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    2x + y = 5 \\
+                    x - y = 1
+                    \end{cases}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Sistema Impossibile</h3>
+                <p>Non ha soluzioni. Graficamente, le rette sono parallele.</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    2x + y = 4 \\
+                    2x + y = 6
+                    \end{cases}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Sistema Indeterminato</h3>
+                <p>Ha infinite soluzioni. Graficamente, le rette coincidono.</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    2x + y = 4 \\
+                    4x + 2y = 8
+                    \end{cases}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- METODI DI RISOLUZIONE -->
+        <section class="teoria">
+            <h2>Metodi di Risoluzione</h2>
+            
+            <div class="formula-card">
+                <h3>Metodo di Sostituzione</h3>
+                <ol>
+                    <li>Isolare un'incognita in una delle equazioni</li>
+                    <li>Sostituire l'espressione nell'altra equazione</li>
+                    <li>Risolvere l'equazione ottenuta</li>
+                    <li>Sostituire il valore trovato</li>
+                </ol>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo del Confronto</h3>
+                <ol>
+                    <li>Isolare la stessa incognita in entrambe le equazioni</li>
+                    <li>Uguagliare le espressioni ottenute</li>
+                    <li>Risolvere l'equazione risultante</li>
+                    <li>Sostituire il valore trovato</li>
+                </ol>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo di Riduzione</h3>
+                <ol>
+                    <li>Moltiplicare le equazioni per opportuni numeri</li>
+                    <li>Sottrarre membro a membro per eliminare un'incognita</li>
+                    <li>Risolvere l'equazione ottenuta</li>
+                    <li>Sostituire il valore trovato</li>
+                </ol>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo di Cramer</h3>
+                <p>Si utilizzano i determinanti:</p>
+                <div class="formula">
+                    \[D = \begin{vmatrix} 
+                    a & b \\
+                    d & e
+                    \end{vmatrix} = ae - bd\]
+                    \[x = \frac{D_x}{D} = \frac{ce - bf}{ae - bd}\]
+                    \[y = \frac{D_y}{D} = \frac{af - cd}{ae - bd}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- SISTEMI PARTICOLARI -->
+        <section class="teoria">
+            <h2>Sistemi Particolari</h2>
+            
+            <div class="formula-card">
+                <h3>Sistemi Fratti</h3>
+                <p>Contengono frazioni algebriche. Si risolvono:</p>
+                <ol>
+                    <li>Trovando il m.c.m. dei denominatori</li>
+                    <li>Moltiplicando ogni equazione per il m.c.m.</li>
+                    <li>Risolvendo il sistema ottenuto</li>
+                </ol>
+            </div>
+
+            <div class="formula-card">
+                <h3>Sistemi Letterali</h3>
+                <p>Contengono parametri letterali. La soluzione può dipendere dai valori dei parametri.</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    ax + y = 1 \\
+                    x + ay = 1
+                    \end{cases}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- SISTEMI IN TRE INCOGNITE -->
+        <section class="teoria">
+            <h2>Sistemi in Tre Incognite</h2>
+            <div class="formula-card">
+                <p>Un sistema di tre equazioni in tre incognite:</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    ax + by + cz = d \\
+                    ex + fy + gz = h \\
+                    ix + ly + mz = n
+                    \end{cases}\]
+                </div>
+                <p>Si risolve per sostituzione o con il metodo di Cramer tridimensionale.</p>
+            </div>
+        </section>
+
+        <!-- ESEMPI -->
+        <section class="esempi">
+            <h2>Esempi</h2>
+
+            <div class="esempio-card">
+                <h3>Esempio 1: Metodo di Sostituzione</h3>
+                <p>Risolvere il sistema:</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    2x + y = 5 \\
+                    x - y = 1
+                    \end{cases}\]
+                </div>
+                <div class="soluzione">
+                    <p>1) Dalla prima equazione: \(y = 5 - 2x\)</p>
+                    <p>2) Sostituiamo nella seconda: \(x - (5 - 2x) = 1\)</p>
+                    <p>3) Risolviamo: \(x - 5 + 2x = 1\)</p>
+                    <p>4) \(3x = 6 \rightarrow x = 2\)</p>
+                    <p>5) Sostituiamo: \(y = 5 - 2(2) = 1\)</p>
+                    <p>Soluzione: \(x = 2, y = 1\)</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 2: Metodo di Cramer</h3>
+                <p>Risolvere il sistema:</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    3x + 2y = 7 \\
+                    x - y = 1
+                    \end{cases}\]
+                </div>
+                <div class="soluzione">
+                    <p>1) Calcoliamo D:</p>
+                    <p>\[D = \begin{vmatrix} 3 & 2 \\ 1 & -1 \end{vmatrix} = -3 - 2 = -5\]</p>
+                    <p>2) Calcoliamo \(D_x\):</p>
+                    <p>\[D_x = \begin{vmatrix} 7 & 2 \\ 1 & -1 \end{vmatrix} = -7 - 2 = -9\]</p>
+                    <p>3) Calcoliamo \(D_y\):</p>
+                    <p>\[D_y = \begin{vmatrix} 3 & 7 \\ 1 & 1 \end{vmatrix} = 3 - 7 = -4\]</p>
+                    <p>4) Quindi:</p>
+                    <p>\[x = \frac{D_x}{D} = \frac{-9}{-5} = \frac{9}{5}\]</p>
+                    <p>\[y = \frac{D_y}{D} = \frac{-4}{-5} = \frac{4}{5}\]</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 3: Sistema Letterale</h3>
+                <p>Risolvere il sistema al variare di k:</p>
+                <div class="formula">
+                    \[\begin{cases} 
+                    x + ky = 1 \\
+                    x + y = 2
+                    \end{cases}\]
+                </div>
+                <div class="soluzione">
+                    <p>1) Sottraiamo membro a membro:</p>
+                    <p>\(ky - y = -1\)</p>
+                    <p>\(y(k-1) = -1\)</p>
+                    <p>2) Se \(k \neq 1\):</p>
+                    <p>\[y = -\frac{1}{k-1}\]</p>
+                    <p>\[x = 2 - y = 2 + \frac{1}{k-1}\]</p>
+                    <p>3) Se \(k = 1\) il sistema è impossibile</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

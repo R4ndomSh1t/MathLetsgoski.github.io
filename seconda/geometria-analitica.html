@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometria Analitica - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Seconda Superiore</a>
+                <div class="dropdown-content">
+                    <a href="radicali.html">Radicali</a>
+                    <a href="sistemi-lineari.html">Sistemi Lineari</a>
+                    <a href="geometria-analitica.html">Geometria Analitica</a>
+                    <a href="secondo-grado.html">Equazioni II Grado</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Geometria Analitica</h1>
+
+        <!-- PIANO CARTESIANO -->
+        <section class="teoria">
+            <h2>Il Sistema di Riferimento Cartesiano</h2>
+            <div class="formula-card">
+                <p>Il piano cartesiano è formato da due rette orientate e perpendicolari (gli assi) che si intersecano in un punto O (origine):</p>
+                <ul>
+                    <li>Asse x (ascisse): orizzontale</li>
+                    <li>Asse y (ordinate): verticale</li>
+                </ul>
+                <div class="formula">
+                    <p>Asse x: \[y = 0\]</p>
+                    <p>Asse y: \[x = 0\]</p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Coordinate di un Punto</h3>
+                <p>Ogni punto P del piano è individuato da una coppia ordinata di numeri (x, y):</p>
+                <ul>
+                    <li>x è la distanza dall'asse y (ascissa)</li>
+                    <li>y è la distanza dall'asse x (ordinata)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DISTANZA TRA PUNTI -->
+        <section class="teoria">
+            <h2>La Distanza tra Due Punti</h2>
+            <div class="formula-card">
+                <p>Dati due punti \(A(x_1, y_1)\) e \(B(x_2, y_2)\), la loro distanza è:</p>
+                <div class="formula">
+                    \[d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- PUNTO MEDIO -->
+        <section class="teoria">
+            <h2>Il Punto Medio di un Segmento</h2>
+            <div class="formula-card">
+                <p>Il punto medio M del segmento AB ha coordinate:</p>
+                <div class="formula">
+                    \[M\left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)\]
+                </div>
+            </div>
+        </section>
+
+        <!-- RETTE -->
+        <section class="teoria">
+            <h2>Le Rette nel Piano Cartesiano</h2>
+            
+            <div class="formula-card">
+                <h3>Rette Passanti per l'Origine</h3>
+                <p>Equazione: \[y = mx\]</p>
+                <p>dove m è il coefficiente angolare</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Gli Assi Cartesiani</h3>
+                <ul>
+                    <li>Asse x: \[y = 0\]</li>
+                    <li>Asse y: \[x = 0\]</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Rette Parallele agli Assi</h3>
+                <ul>
+                    <li>Parallela all'asse x: \[y = k\]</li>
+                    <li>Parallela all'asse y: \[x = h\]</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Le Bisettrici dei Quadranti</h3>
+                <ul>
+                    <li>Prima e terza: \[y = x\]</li>
+                    <li>Seconda e quarta: \[y = -x\]</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Equazione Generica di una Retta</h3>
+                <p>Forma esplicita: \[y = mx + q\]</p>
+                <p>dove:</p>
+                <ul>
+                    <li>m è il coefficiente angolare</li>
+                    <li>q è l'ordinata all'origine</li>
+                </ul>
+                <p>Forma implicita: \[ax + by + c = 0\]</p>
+            </div>
+        </section>
+
+        <!-- COEFFICIENTE ANGOLARE -->
+        <section class="teoria">
+            <h2>Il Coefficiente Angolare</h2>
+            
+            <div class="formula-card">
+                <h3>Calcolo del Coefficiente Angolare</h3>
+                <p>Dati due punti \(A(x_1, y_1)\) e \(B(x_2, y_2)\):</p>
+                <div class="formula">
+                    \[m = \frac{y_2-y_1}{x_2-x_1}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Rette Parallele</h3>
+                <p>Due rette sono parallele se e solo se hanno lo stesso coefficiente angolare:</p>
+                <div class="formula">
+                    \[m_1 = m_2\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Rette Perpendicolari</h3>
+                <p>Due rette sono perpendicolari se e solo se i loro coefficienti angolari sono uno l'opposto reciproco dell'altro:</p>
+                <div class="formula">
+                    \[m_1 \cdot m_2 = -1\]
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERSEZIONI E DISTANZE -->
+        <section class="teoria">
+            <h2>Intersezioni e Distanze</h2>
+            
+            <div class="formula-card">
+                <h3>Intersezione tra Due Rette</h3>
+                <p>Si risolve il sistema delle equazioni delle rette:</p>
+                <div class="formula">
+                    \[\begin{cases}
+                    y = m_1x + q_1 \\
+                    y = m_2x + q_2
+                    \end{cases}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Distanza di un Punto da una Retta</h3>
+                <p>Data la retta \(ax + by + c = 0\) e il punto \(P(x_0, y_0)\):</p>
+                <div class="formula">
+                    \[d = \frac{|ax_0 + by_0 + c|}{\sqrt{a^2 + b^2}}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- ESEMPI -->
+        <section class="esempi">
+            <h2>Esempi</h2>
+
+            <div class="esempio-card">
+                <h3>Esempio 1: Distanza tra Punti</h3>
+                <p>Calcolare la distanza tra i punti A(1, 2) e B(4, 6)</p>
+                <div class="soluzione">
+                    <p>1) Applichiamo la formula: \[d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}\]</p>
+                    <p>2) \[d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = \sqrt{25} = 5\]</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 2: Retta per Due Punti</h3>
+                <p>Trovare l'equazione della retta passante per A(0, 1) e B(2, 5)</p>
+                <div class="soluzione">
+                    <p>1) Calcoliamo il coefficiente angolare:</p>
+                    <p>\[m = \frac{5-1}{2-0} = 2\]</p>
+                    <p>2) Usiamo il punto A(0, 1) per trovare q:</p>
+                    <p>\[1 = 2 \cdot 0 + q \rightarrow q = 1\]</p>
+                    <p>3) L'equazione della retta è: \[y = 2x + 1\]</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 3: Distanza Punto-Retta</h3>
+                <p>Calcolare la distanza del punto P(2, 3) dalla retta 2x - y + 1 = 0</p>
+                <div class="soluzione">
+                    <p>1) Riscriviamo la retta in forma normale: \[2x - y + 1 = 0\]</p>
+                    <p>2) Applichiamo la formula:</p>
+                    <p>\[d = \frac{|2 \cdot 2 - 3 + 1|}{\sqrt{4 + 1}} = \frac{|2|}{\sqrt{5}} = \frac{2}{\sqrt{5}}\]</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

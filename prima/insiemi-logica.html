@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insiemi e Logica - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Prima Superiore</a>
+                <div class="dropdown-content">
+                    <a href="numeri-razionali.html">Numeri Razionali</a>
+                    <a href="insiemi-logica.html">Insiemi e Logica</a>
+                    <a href="relazioni-funzioni.html">Relazioni e Funzioni</a>
+                    <a href="monomi-polinomi.html">Monomi e Polinomi</a>
+                    <a href="equazioni-disequazioni.html">Equazioni e Disequazioni</a>
+                    <a href="geometria.html">Geometria</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Insiemi e Logica</h1>
+
+        <!-- GLI INSIEMI -->
+        <section class="teoria">
+            <h2>Gli insiemi</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Un insieme è una collezione ben definita di oggetti, detti elementi dell'insieme.</p>
+                <div class="formula">
+                    <p>Notazione: \[A = \{x \in U : P(x)\}\]</p>
+                    <p>dove U è l'insieme universo e P(x) è la proprietà caratteristica</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LA RAPPRESENTAZIONE DI UN INSIEME -->
+        <section class="teoria">
+            <h2>La rappresentazione di un insieme</h2>
+            <div class="formula-card">
+                <h3>Metodi di Rappresentazione</h3>
+                <ul>
+                    <li>Per elencazione: \[A = \{1, 2, 3, 4\}\]</li>
+                    <li>Per proprietà caratteristica: \[B = \{x \in \mathbb{N} : x < 5\}\]</li>
+                    <li>Mediante diagrammi di Venn</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- I SOTTOINSIEMI -->
+        <section class="teoria">
+            <h2>I sottoinsiemi</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>A è sottoinsieme di B se ogni elemento di A appartiene anche a B</p>
+                <div class="formula">
+                    \[A \subseteq B \iff \forall x(x \in A \rightarrow x \in B)\]
+                </div>
+                <p>Sottoinsieme proprio:</p>
+                <div class="formula">
+                    \[A \subset B \iff A \subseteq B \land A \neq B\]
+                </div>
+            </div>
+        </section>
+
+        <!-- OPERAZIONI CON GLI INSIEMI -->
+        <section class="teoria">
+            <h2>Operazioni con gli insiemi</h2>
+            <div class="formula-card">
+                <h3>Operazioni Fondamentali</h3>
+                <ul>
+                    <li>Unione: \[A \cup B = \{x : x \in A \lor x \in B\}\]</li>
+                    <li>Intersezione: \[A \cap B = \{x : x \in A \land x \in B\}\]</li>
+                    <li>Differenza: \[A \setminus B = \{x : x \in A \land x \notin B\}\]</li>
+                    <li>Complementare: \[A' = \{x \in U : x \notin A\}\]</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- INSIEME DELLE PARTI E PARTIZIONE -->
+        <section class="teoria">
+            <h2>Insieme delle parti e partizione di un insieme</h2>
+            <div class="formula-card">
+                <h3>Insieme delle Parti</h3>
+                <p>L'insieme di tutti i sottoinsiemi di A si indica con \(\mathcal{P}(A)\)</p>
+                <div class="formula">
+                    <p>Se A ha n elementi: \[|\mathcal{P}(A)| = 2^n\]</p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Partizione</h3>
+                <p>Una partizione di A è una famiglia di sottoinsiemi di A tali che:</p>
+                <ul>
+                    <li>Sono non vuoti</li>
+                    <li>Sono disgiunti a due a due</li>
+                    <li>La loro unione è A</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROPOSIZIONI LOGICHE -->
+        <section class="teoria">
+            <h2>Proposizioni logiche</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Una proposizione è un'affermazione che può essere vera o falsa</p>
+                <p>Valori di verità:</p>
+                <ul>
+                    <li>V = vero</li>
+                    <li>F = falso</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONNETTIVI LOGICI ED ESPRESSIONI PARTE 1 -->
+        <section class="teoria">
+            <h2>Connettivi logici ed espressioni - Parte 1</h2>
+            <div class="formula-card">
+                <h3>Connettivi Fondamentali</h3>
+                <ul>
+                    <li>Negazione (NOT): \[\neg p\]</li>
+                    <li>Congiunzione (AND): \[p \land q\]</li>
+                    <li>Disgiunzione (OR): \[p \lor q\]</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONNETTIVI LOGICI ED ESPRESSIONI PARTE 2 -->
+        <section class="teoria">
+            <h2>Connettivi logici ed espressioni - Parte 2</h2>
+            <div class="formula-card">
+                <h3>Altri Connettivi</h3>
+                <ul>
+                    <li>Implicazione: \[p \rightarrow q\]</li>
+                    <li>Doppia implicazione: \[p \leftrightarrow q\]</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ESPRESSIONI LOGICHE -->
+        <section class="teoria">
+            <h2>Connettivi logici ed espressioni - Espressioni logiche</h2>
+            <div class="formula-card">
+                <h3>Tavole di Verità</h3>
+                <div class="formula">
+                    <p>Esempio per \(p \rightarrow q\):</p>
+                    <table>
+                        <tr>
+                            <th>p</th>
+                            <th>q</th>
+                            <th>\(p \rightarrow q\)</th>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td>V</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td>F</td>
+                            <td>F</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>V</td>
+                            <td>V</td>
+                        </tr>
+                        <tr>
+                            <td>F</td>
+                            <td>F</td>
+                            <td>V</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- LA LOGICA E GLI INSIEMI -->
+        <section class="teoria">
+            <h2>La logica e gli insiemi</h2>
+            <div class="formula-card">
+                <h3>Corrispondenze</h3>
+                <ul>
+                    <li>\(p \land q \leftrightarrow A \cap B\)</li>
+                    <li>\(p \lor q \leftrightarrow A \cup B\)</li>
+                    <li>\(\neg p \leftrightarrow A'\)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- QUANTIFICATORI -->
+        <section class="teoria">
+            <h2>Quantificatori</h2>
+            <div class="formula-card">
+                <h3>Quantificatori Universali ed Esistenziali</h3>
+                <ul>
+                    <li>Universale: \[\forall x P(x)\] "per ogni x vale P(x)"</li>
+                    <li>Esistenziale: \[\exists x P(x)\] "esiste almeno un x tale che P(x)"</li>
+                </ul>
+                <div class="formula">
+                    <p>Negazione dei quantificatori:</p>
+                    <ul>
+                        <li>\[\neg(\forall x P(x)) \equiv \exists x \neg P(x)\]</li>
+                        <li>\[\neg(\exists x P(x)) \equiv \forall x \neg P(x)\]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radicali - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Seconda Superiore</a>
+                <div class="dropdown-content">
+                    <a href="radicali.html">Radicali</a>
+                    <a href="sistemi-lineari.html">Sistemi Lineari</a>
+                    <a href="geometria-analitica.html">Geometria Analitica</a>
+                    <a href="secondo-grado.html">Equazioni II Grado</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Radicali</h1>
+
+        <!-- DEFINIZIONE -->
+        <section class="teoria">
+            <h2>Che cos'è un Radicale</h2>
+            <p>Un radicale è un'espressione che rappresenta la radice n-esima di un numero. Il simbolo \(\sqrt[n]{a}\) indica la radice n-esima di a, dove:</p>
+            <ul>
+                <li>n è l'indice della radice</li>
+                <li>a è il radicando</li>
+            </ul>
+            <div class="formula-card">
+                <h3>Condizioni di Esistenza</h3>
+                <ul>
+                    <li>Per indice pari: \(\sqrt[2n]{a} \text{ esiste } \iff a \geq 0\)</li>
+                    <li>Per indice dispari: \(\sqrt[2n+1]{a} \text{ esiste } \forall a \in \mathbb{R}\)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROPRIETÀ INVARIANTIVA -->
+        <section class="teoria">
+            <h2>Proprietà Invariantiva</h2>
+            <div class="formula-card">
+                <p>Moltiplicando o dividendo radicando e indice per lo stesso numero, il valore del radicale non cambia:</p>
+                <div class="formula">
+                    \[\sqrt[n]{a} = \sqrt[nm]{a^m}\]
+                </div>
+                <p>Esempio: \[\sqrt[2]{8} = \sqrt[4]{8^2} = \sqrt[4]{64}\]</p>
+            </div>
+        </section>
+
+        <!-- OPERAZIONI -->
+        <section class="teoria">
+            <h2>Operazioni con i Radicali</h2>
+            
+            <div class="formula-card">
+                <h3>Moltiplicazione e Divisione</h3>
+                <div class="formula">
+                    \[\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{ab}\]
+                    \[\frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Addizione e Sottrazione</h3>
+                <p>Si possono sommare o sottrarre solo radicali simili (stesso indice e stesso radicando):</p>
+                <div class="formula">
+                    \[k_1\sqrt{a} \pm k_2\sqrt{a} = (k_1 \pm k_2)\sqrt{a}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Potenza e Radice</h3>
+                <div class="formula">
+                    \[(\sqrt[n]{a})^m = \sqrt[n]{a^m}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- TRASPORTO -->
+        <section class="teoria">
+            <h2>Trasporto di un Fattore</h2>
+            
+            <div class="formula-card">
+                <h3>Fuori dal Segno di Radice</h3>
+                <div class="formula">
+                    \[\sqrt[n]{a^{nk} \cdot b} = a^k \cdot \sqrt[n]{b}\]
+                </div>
+                <p>Esempio: \[\sqrt{16x^2} = 4|x|\]</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Sotto il Segno di Radice</h3>
+                <div class="formula">
+                    \[a \cdot \sqrt[n]{b} = \sqrt[n]{a^n \cdot b}\]
+                </div>
+                <p>Esempio: \[2\sqrt{3} = \sqrt{12}\]</p>
+            </div>
+        </section>
+
+        <!-- RADICALI QUADRATICI DOPPI -->
+        <section class="teoria">
+            <h2>Radicali Quadratici Doppi</h2>
+            <div class="formula-card">
+                <p>Sono espressioni del tipo \(\sqrt{a \pm \sqrt{b}}\)</p>
+                <div class="formula">
+                    \[\sqrt{a + \sqrt{b}} = \sqrt{\frac{a + \sqrt{a^2 - b}}{2}} + \sqrt{\frac{a - \sqrt{a^2 - b}}{2}}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- RAZIONALIZZAZIONE -->
+        <section class="teoria">
+            <h2>Razionalizzazione</h2>
+            
+            <div class="formula-card">
+                <h3>Denominatore con un Radicale</h3>
+                <div class="formula">
+                    \[\frac{1}{\sqrt{a}} = \frac{\sqrt{a}}{a}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Denominatore con Somma o Differenza</h3>
+                <div class="formula">
+                    \[\frac{1}{\sqrt{a} \pm \sqrt{b}} = \frac{\sqrt{a} \mp \sqrt{b}}{a - b}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- EQUAZIONI E DISEQUAZIONI -->
+        <section class="teoria">
+            <h2>Equazioni e Disequazioni con Radicali</h2>
+            
+            <div class="formula-card">
+                <h3>Equazioni con Radicali</h3>
+                <p>Per risolvere un'equazione con radicali:</p>
+                <ol>
+                    <li>Verificare le condizioni di esistenza</li>
+                    <li>Isolare il radicale</li>
+                    <li>Elevare entrambi i membri all'indice del radicale</li>
+                    <li>Verificare le soluzioni</li>
+                </ol>
+            </div>
+
+            <div class="formula-card">
+                <h3>Disequazioni con Radicali</h3>
+                <p>Per le disequazioni con radicali bisogna considerare:</p>
+                <ul>
+                    <li>Il segno del radicale (se indice pari)</li>
+                    <li>Le condizioni di esistenza</li>
+                    <li>Il verso della disequazione quando si eleva a potenza pari</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ESEMPI -->
+        <section class="esempi">
+            <h2>Esempi</h2>
+
+            <div class="esempio-card">
+                <h3>Esempio 1: Trasporto fuori radice</h3>
+                <p>Semplificare: \(\sqrt{75x^4y^2}\)</p>
+                <div class="soluzione">
+                    <p>1) Scomponiamo: \(\sqrt{75x^4y^2} = \sqrt{25 \cdot 3 \cdot x^4 \cdot y^2}\)</p>
+                    <p>2) Portiamo fuori i fattori con esponente ≥ 2:</p>
+                    <p>3) \(\sqrt{75x^4y^2} = 5x^2y\sqrt{3}\)</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 2: Razionalizzazione</h3>
+                <p>Razionalizzare: \(\frac{3}{\sqrt{5} - 2}\)</p>
+                <div class="soluzione">
+                    <p>1) Moltiplichiamo numeratore e denominatore per \(\sqrt{5} + 2\)</p>
+                    <p>2) \(\frac{3}{\sqrt{5} - 2} \cdot \frac{\sqrt{5} + 2}{\sqrt{5} + 2}\)</p>
+                    <p>3) \(\frac{3(\sqrt{5} + 2)}{5 - 4} = 3(\sqrt{5} + 2)\)</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 3: Equazione con Radicali</h3>
+                <p>Risolvere: \(\sqrt{x + 3} - 1 = x\)</p>
+                <div class="soluzione">
+                    <p>1) C.E.: \(x + 3 \geq 0 \rightarrow x \geq -3\)</p>
+                    <p>2) Isoliamo il radicale: \(\sqrt{x + 3} = x + 1\)</p>
+                    <p>3) Eleviamo al quadrato: \(x + 3 = x^2 + 2x + 1\)</p>
+                    <p>4) Risolviamo: \(x^2 + x - 2 = 0\)</p>
+                    <p>5) Soluzioni: \(x = 1\) o \(x = -2\)</p>
+                    <p>6) Verifica: solo \(x = 1\) è accettabile</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

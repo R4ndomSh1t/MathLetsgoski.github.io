@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equazioni di Secondo Grado - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Seconda Superiore</a>
+                <div class="dropdown-content">
+                    <a href="radicali.html">Radicali</a>
+                    <a href="sistemi-lineari.html">Sistemi Lineari</a>
+                    <a href="geometria-analitica.html">Geometria Analitica</a>
+                    <a href="secondo-grado.html">Equazioni II Grado</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Equazioni di Secondo Grado</h1>
+
+        <!-- FORMA GENERALE -->
+        <section class="teoria">
+            <h2>Forma Generale</h2>
+            <div class="formula-card">
+                <p>Un'equazione di secondo grado ha la forma:</p>
+                <div class="formula">
+                    \[ax^2 + bx + c = 0\]
+                </div>
+                <p>dove:</p>
+                <ul>
+                    <li>a ≠ 0 è il coefficiente del termine di secondo grado</li>
+                    <li>b è il coefficiente del termine di primo grado</li>
+                    <li>c è il termine noto</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FORMULA RISOLUTIVA -->
+        <section class="teoria">
+            <h2>Formula Risolutiva</h2>
+            <div class="formula-card">
+                <h3>Formula Completa</h3>
+                <div class="formula">
+                    \[x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]
+                </div>
+                <p>dove \(\Delta = b^2 - 4ac\) è il discriminante</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Discriminante</h3>
+                <ul>
+                    <li>Se \(\Delta > 0\): due soluzioni reali e distinte</li>
+                    <li>Se \(\Delta = 0\): due soluzioni reali e coincidenti</li>
+                    <li>Se \(\Delta < 0\): due soluzioni complesse coniugate</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Formula Ridotta</h3>
+                <p>Se b è pari (b = 2p), si può usare:</p>
+                <div class="formula">
+                    \[x_{1,2} = -p \pm \sqrt{p^2 - ac}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- CASI PARTICOLARI -->
+        <section class="teoria">
+            <h2>Casi Particolari</h2>
+            <div class="formula-card">
+                <h3>Equazione Pura</h3>
+                <p>Quando b = 0: \[ax^2 + c = 0\]</p>
+                <div class="formula">
+                    \[x_{1,2} = \pm \sqrt{-\frac{c}{a}}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Equazione Spuria</h3>
+                <p>Quando c = 0: \[ax^2 + bx = 0\]</p>
+                <div class="formula">
+                    \[x(ax + b) = 0 \rightarrow x = 0 \text{ o } x = -\frac{b}{a}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Equazione Monomia</h3>
+                <p>Quando b = c = 0: \[ax^2 = 0\]</p>
+                <div class="formula">
+                    \[x = 0\]
+                </div>
+            </div>
+        </section>
+
+        <!-- RELAZIONI TRA RADICI -->
+        <section class="teoria">
+            <h2>Relazioni tra Radici</h2>
+            <div class="formula-card">
+                <h3>Somma e Prodotto</h3>
+                <p>Date le radici \(x_1\) e \(x_2\):</p>
+                <div class="formula">
+                    \[x_1 + x_2 = -\frac{b}{a}\]
+                    \[x_1 \cdot x_2 = \frac{c}{a}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Regola di Cartesio</h3>
+                <p>In un'equazione di secondo grado:</p>
+                <ul>
+                    <li>Se i segni cambiano una volta: una radice positiva</li>
+                    <li>Se i segni cambiano due volte: due radici positive</li>
+                    <li>Se i segni non cambiano: nessuna radice positiva</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SCOMPOSIZIONE -->
+        <section class="teoria">
+            <h2>Scomposizione del Trinomio</h2>
+            <div class="formula-card">
+                <p>Un trinomio di secondo grado si può scomporre come:</p>
+                <div class="formula">
+                    \[ax^2 + bx + c = a(x - x_1)(x - x_2)\]
+                </div>
+                <p>dove \(x_1\) e \(x_2\) sono le radici dell'equazione</p>
+            </div>
+        </section>
+
+        <!-- EQUAZIONI PARAMETRICHE -->
+        <section class="teoria">
+            <h2>Equazioni Parametriche</h2>
+            <div class="formula-card">
+                <p>Sono equazioni che contengono un parametro k:</p>
+                <div class="formula">
+                    \[ax^2 + kx + c = 0\]
+                </div>
+                <p>Si studiano al variare del parametro k</p>
+            </div>
+        </section>
+
+        <!-- NUMERI COMPLESSI -->
+        <section class="teoria">
+            <h2>Numeri Complessi</h2>
+            <div class="formula-card">
+                <h3>Unità Immaginaria</h3>
+                <p>Si definisce i come: \[i^2 = -1\]</p>
+                <p>Un numero complesso ha la forma: \[z = a + bi\]</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Soluzioni Complesse</h3>
+                <p>Se \(\Delta < 0\), le soluzioni sono:</p>
+                <div class="formula">
+                    \[x_{1,2} = -\frac{b}{2a} \pm i\frac{\sqrt{|b^2 - 4ac|}}{2a}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- EQUAZIONI PARTICOLARI -->
+        <section class="teoria">
+            <h2>Equazioni Particolari</h2>
+            <div class="formula-card">
+                <h3>Equazioni Biquadratiche</h3>
+                <p>Hanno la forma: \[ax^4 + bx^2 + c = 0\]</p>
+                <p>Si risolvono ponendo \(t = x^2\)</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Equazioni Binomie</h3>
+                <p>Hanno la forma: \[ax^n + b = 0\]</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Equazioni Trinomie</h3>
+                <p>Hanno la forma: \[ax^{2n} + bx^n + c = 0\]</p>
+                <p>Si risolvono ponendo \(t = x^n\)</p>
+            </div>
+        </section>
+
+        <!-- DISEQUAZIONI -->
+        <section class="teoria">
+            <h2>Disequazioni di Secondo Grado</h2>
+            <div class="formula-card">
+                <h3>Studio del Segno</h3>
+                <p>Per \(ax^2 + bx + c > 0\):</p>
+                <ul>
+                    <li>Se a > 0: parabola con concavità verso l'alto</li>
+                    <li>Se a < 0: parabola con concavità verso il basso</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Disequazioni Fratte</h3>
+                <p>Si studiano separatamente numeratore e denominatore</p>
+                <p>Attenzione agli intervalli di esistenza</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Disequazioni con Valore Assoluto</h3>
+                <p>Si risolvono considerando i casi:</p>
+                <ul>
+                    <li>|espressione| > k</li>
+                    <li>|espressione| < k</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ESEMPI -->
+        <section class="esempi">
+            <h2>Esempi</h2>
+            <div class="esempio-card">
+                <h3>Esempio 1: Equazione Completa</h3>
+                <p>Risolvere: \[x^2 - 5x + 6 = 0\]</p>
+                <div class="soluzione">
+                    <p>1) Identifichiamo i coefficienti: a = 1, b = -5, c = 6</p>
+                    <p>2) Calcoliamo il discriminante:</p>
+                    <p>\[\Delta = (-5)^2 - 4(1)(6) = 25 - 24 = 1\]</p>
+                    <p>3) Applichiamo la formula:</p>
+                    <p>\[x_{1,2} = \frac{5 \pm \sqrt{1}}{2} = \frac{5 \pm 1}{2}\]</p>
+                    <p>4) Quindi: \[x_1 = 3, x_2 = 2\]</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 2: Equazione Parametrica</h3>
+                <p>Determinare k affinché l'equazione abbia due soluzioni coincidenti:</p>
+                <p>\[x^2 + kx + 4 = 0\]</p>
+                <div class="soluzione">
+                    <p>1) Per avere radici coincidenti deve essere \(\Delta = 0\)</p>
+                    <p>2) \[k^2 - 16 = 0\]</p>
+                    <p>3) \[k = \pm 4\]</p>
+                </div>
+            </div>
+
+            <div class="esempio-card">
+                <h3>Esempio 3: Disequazione</h3>
+                <p>Risolvere: \[x^2 - 4x + 3 > 0\]</p>
+                <div class="soluzione">
+                    <p>1) Troviamo le radici dell'equazione associata:</p>
+                    <p>\[x^2 - 4x + 3 = 0 \rightarrow x = 1 \text{ o } x = 3\]</p>
+                    <p>2) Poiché a > 0, la parabola ha concavità verso l'alto</p>
+                    <p>3) Quindi: \[x < 1 \text{ o } x > 3\]</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

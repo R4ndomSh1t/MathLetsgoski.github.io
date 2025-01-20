@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monomi e Polinomi - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        .diagram {
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .diagram svg {
+            max-width: 100%;
+            height: auto;
+        }
+        .diagram-text {
+            font-style: italic;
+            text-align: center;
+            margin-top: 0.5rem;
+            color: #e2e8f0;
+        }
+        .legend-item {
+            font-size: 0.9em;
+            fill: #ffffff;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Prima Superiore</a>
+                <div class="dropdown-content">
+                    <a href="numeri-razionali.html">Numeri Razionali</a>
+                    <a href="insiemi-logica.html">Insiemi e Logica</a>
+                    <a href="relazioni-funzioni.html">Relazioni e Funzioni</a>
+                    <a href="monomi-polinomi.html">Monomi e Polinomi</a>
+                    <a href="equazioni-disequazioni.html">Equazioni e Disequazioni</a>
+                    <a href="geometria.html">Geometria</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Monomi e Polinomi</h1>
+
+        <!-- MONOMI -->
+        <section class="teoria">
+            <h2>Monomi</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Un monomio è un'espressione algebrica del tipo \[ax_1^{n_1}x_2^{n_2}...x_k^{n_k}\] dove:</p>
+                <ul>
+                    <li>a è il coefficiente (numero reale)</li>
+                    <li>\(x_1, x_2, ..., x_k\) sono le variabili</li>
+                    <li>\(n_1, n_2, ..., n_k\) sono gli esponenti (numeri naturali)</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Grado di un Monomio</h3>
+                <p>Il grado complessivo è la somma degli esponenti:</p>
+                <div class="formula">
+                    \[\text{grado}(ax_1^{n_1}x_2^{n_2}) = n_1 + n_2\]
+                </div>
+            </div>
+        </section>
+
+        <!-- OPERAZIONI CON I MONOMI -->
+        <section class="teoria">
+            <h2>Operazioni con i monomi</h2>
+            <div class="formula-card">
+                <h3>Somma e Sottrazione</h3>
+                <p>Si possono sommare o sottrarre solo monomi simili (stessa parte letterale)</p>
+                <div class="formula">
+                    \[3x^2y + 5x^2y = 8x^2y\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Moltiplicazione</h3>
+                <p>Si moltiplicano i coefficienti e si sommano gli esponenti delle stesse variabili</p>
+                <div class="formula">
+                    \[(3x^2y)(2xy^2) = 6x^3y^3\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Divisione</h3>
+                <p>Si dividono i coefficienti e si sottraggono gli esponenti delle stesse variabili</p>
+                <div class="formula">
+                    \[\frac{6x^3y^3}{2xy^2} = 3x^2y\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Potenza</h3>
+                <p>Si eleva il coefficiente alla potenza e si moltiplicano gli esponenti per l'esponente della potenza</p>
+                <div class="formula">
+                    \[(2x^2y)^3 = 8x^6y^3\]
+                </div>
+            </div>
+        </section>
+
+        <!-- POLINOMI -->
+        <section class="teoria">
+            <h2>Polinomi</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Un polinomio è una somma algebrica di monomi</p>
+                <div class="formula">
+                    \[P(x) = a_nx^n + a_{n-1}x^{n-1} + ... + a_1x + a_0\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Grado di un Polinomio</h3>
+                <p>Il grado di un polinomio è il massimo tra i gradi dei suoi monomi</p>
+                <div class="formula">
+                    \[\text{grado}(3x^2 + 2x + 1) = 2\]
+                </div>
+            </div>
+        </section>
+
+        <!-- OPERAZIONI CON I POLINOMI -->
+        <section class="teoria">
+            <h2>Operazioni con i polinomi</h2>
+            <div class="formula-card">
+                <h3>Somma e Sottrazione</h3>
+                <p>Si sommano o sottraggono i coefficienti dei termini simili</p>
+                <div class="formula">
+                    \[(3x^2 + 2x) + (x^2 - x) = 4x^2 + x\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Moltiplicazione</h3>
+                <p>Si moltiplica ogni termine del primo polinomio per ogni termine del secondo</p>
+                <div class="formula">
+                    \[(x + 1)(x - 1) = x^2 - 1\]
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODOTTI NOTEVOLI -->
+        <section class="teoria">
+            <h2>Prodotti notevoli</h2>
+            <div class="formula-card">
+                <h3>Quadrato di Binomio</h3>
+                <div class="formula">
+                    \[(a + b)^2 = a^2 + 2ab + b^2\]
+                    \[(a - b)^2 = a^2 - 2ab + b^2\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Somma per Differenza</h3>
+                <div class="formula">
+                    \[(a + b)(a - b) = a^2 - b^2\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Cubo di Binomio</h3>
+                <div class="formula">
+                    \[(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\]
+                    \[(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3\]
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVISIONE TRA POLINOMI -->
+        <section class="teoria">
+            <h2>Divisione tra polinomi</h2>
+            <div class="formula-card">
+                <h3>Divisione con Resto</h3>
+                <p>Dati due polinomi P(x) e D(x), esistono Q(x) e R(x) tali che:</p>
+                <div class="formula">
+                    \[P(x) = D(x)Q(x) + R(x)\]
+                </div>
+                <p>dove il grado di R(x) è minore del grado di D(x)</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Regola di Ruffini</h3>
+                <p>Per dividere un polinomio per (x - a)</p>
+                <div class="formula">
+                    \[P(x) = (x - a)Q(x) + R\]
+                    \[R = P(a)\]
+                </div>
+            </div>
+        </section>
+
+        <!-- FATTORIZZAZIONE -->
+        <section class="teoria">
+            <h2>Fattorizzazione</h2>
+            <div class="formula-card">
+                <h3>Metodi di Fattorizzazione</h3>
+                <ul>
+                    <li>Raccoglimento a fattor comune</li>
+                    <li>Riconoscimento di prodotti notevoli</li>
+                    <li>Trinomio caratteristico</li>
+                    <li>Somma e differenza di cubi</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Trinomio Caratteristico</h3>
+                <p>Un trinomio del tipo \(x^2 + bx + c\) si fattorizza come:</p>
+                <div class="formula">
+                    \[x^2 + bx + c = (x + h)(x + k)\]
+                </div>
+                <p>dove h e k sono numeri tali che:</p>
+                <ul>
+                    <li>\[h + k = b\]</li>
+                    <li>\[h \cdot k = c\]</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DIVISIBILITÀ TRA POLINOMI -->
+        <section class="teoria">
+            <h2>Divisibilità tra polinomi</h2>
+            <div class="formula-card">
+                <h3>Teorema del Resto</h3>
+                <p>Il resto della divisione di P(x) per (x - a) è uguale a P(a)</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Teorema di Ruffini</h3>
+                <p>Un polinomio P(x) è divisibile per (x - a) se e solo se P(a) = 0</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

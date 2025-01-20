@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relazioni e Funzioni - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Prima Superiore</a>
+                <div class="dropdown-content">
+                    <a href="numeri-razionali.html">Numeri Razionali</a>
+                    <a href="insiemi-logica.html">Insiemi e Logica</a>
+                    <a href="relazioni-funzioni.html">Relazioni e Funzioni</a>
+                    <a href="monomi-polinomi.html">Monomi e Polinomi</a>
+                    <a href="equazioni-disequazioni.html">Equazioni e Disequazioni</a>
+                    <a href="geometria.html">Geometria</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Relazioni e Funzioni</h1>
+
+        <!-- PRODOTTO CARTESIANO -->
+        <section class="teoria">
+            <h2>Prodotto cartesiano</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Il prodotto cartesiano di due insiemi A e B è l'insieme di tutte le coppie ordinate (a,b) dove a ∈ A e b ∈ B</p>
+                <div class="formula">
+                    \[A \times B = \{(a,b) : a \in A \land b \in B\}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- RELAZIONI -->
+        <section class="teoria">
+            <h2>Relazioni</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Una relazione R da A a B è un sottoinsieme del prodotto cartesiano A × B</p>
+                <div class="formula">
+                    <p>Notazione: \[aRb \iff (a,b) \in R\]</p>
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Dominio e Codominio</h3>
+                <ul>
+                    <li>Dominio: \[D_R = \{a \in A : \exists b \in B, (a,b) \in R\}\]</li>
+                    <li>Codominio: \[C_R = \{b \in B : \exists a \in A, (a,b) \in R\}\]</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- RELAZIONI IN UN INSIEME -->
+        <section class="teoria">
+            <h2>Relazioni in un insieme</h2>
+            <div class="formula-card">
+                <h3>Proprietà delle Relazioni</h3>
+                <ul>
+                    <li>Riflessiva: \[\forall x \in A, xRx\]</li>
+                    <li>Simmetrica: \[\forall x,y \in A, xRy \implies yRx\]</li>
+                    <li>Transitiva: \[\forall x,y,z \in A, (xRy \land yRz) \implies xRz\]</li>
+                    <li>Antisimmetrica: \[\forall x,y \in A, (xRy \land yRx) \implies x = y\]</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- RELAZIONI DI EQUIVALENZA -->
+        <section class="teoria">
+            <h2>Relazioni di equivalenza</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Una relazione di equivalenza è una relazione che è:</p>
+                <ul>
+                    <li>Riflessiva</li>
+                    <li>Simmetrica</li>
+                    <li>Transitiva</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Classi di Equivalenza</h3>
+                <p>La classe di equivalenza di un elemento a è l'insieme di tutti gli elementi in relazione con a</p>
+                <div class="formula">
+                    \[[a] = \{x \in A : xRa\}\]
+                </div>
+            </div>
+        </section>
+
+        <!-- RELAZIONI D'ORDINE -->
+        <section class="teoria">
+            <h2>Relazioni d'ordine</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Una relazione d'ordine è una relazione che è:</p>
+                <ul>
+                    <li>Riflessiva</li>
+                    <li>Antisimmetrica</li>
+                    <li>Transitiva</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Tipi di Ordine</h3>
+                <ul>
+                    <li>Ordine totale: \[\forall x,y \in A, xRy \lor yRx\]</li>
+                    <li>Ordine parziale: possono esistere elementi non confrontabili</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FUNZIONI -->
+        <section class="teoria">
+            <h2>Funzioni</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Una funzione f da A a B è una relazione che associa ad ogni elemento di A uno ed un solo elemento di B</p>
+                <div class="formula">
+                    \[f: A \rightarrow B\]
+                    \[x \mapsto f(x)\]
+                </div>
+            </div>
+        </section>
+
+        <!-- PROPRIETÀ DELLE FUNZIONI -->
+        <section class="teoria">
+            <h2>Proprietà delle funzioni</h2>
+            <div class="formula-card">
+                <h3>Iniettività</h3>
+                <p>Una funzione è iniettiva se elementi diversi hanno immagini diverse</p>
+                <div class="formula">
+                    \[\forall x_1,x_2 \in A, x_1 \neq x_2 \implies f(x_1) \neq f(x_2)\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Suriettività</h3>
+                <p>Una funzione è suriettiva se ogni elemento del codominio è immagine di almeno un elemento del dominio</p>
+                <div class="formula">
+                    \[\forall y \in B, \exists x \in A : f(x) = y\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Biiettività</h3>
+                <p>Una funzione è biiettiva se è sia iniettiva che suriettiva</p>
+            </div>
+        </section>
+
+        <!-- FUNZIONE INVERSA -->
+        <section class="teoria">
+            <h2>Funzione inversa</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Se f è biiettiva, esiste la funzione inversa \(f^{-1}\) tale che:</p>
+                <div class="formula">
+                    \[f^{-1}(f(x)) = x\]
+                    \[f(f^{-1}(y)) = y\]
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPOSIZIONE DI FUNZIONI -->
+        <section class="teoria">
+            <h2>Composizione di funzioni</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Date due funzioni f: A → B e g: B → C, la loro composizione è:</p>
+                <div class="formula">
+                    \[g \circ f: A \rightarrow C\]
+                    \[(g \circ f)(x) = g(f(x))\]
+                </div>
+            </div>
+        </section>
+
+        <!-- FUNZIONI REALI -->
+        <section class="teoria">
+            <h2>Funzioni reali</h2>
+            <div class="formula-card">
+                <h3>Definizione</h3>
+                <p>Una funzione reale è una funzione del tipo:</p>
+                <div class="formula">
+                    \[f: A \subseteq \mathbb{R} \rightarrow \mathbb{R}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Proprietà</h3>
+                <ul>
+                    <li>Crescente: \[x_1 < x_2 \implies f(x_1) < f(x_2)\]</li>
+                    <li>Decrescente: \[x_1 < x_2 \implies f(x_1) > f(x_2)\]</li>
+                    <li>Monotona: crescente o decrescente</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
