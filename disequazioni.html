@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disequazioni - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Terza Superiore</a>
+                <div class="dropdown-content">
+                    <a href="disequazioni.html">Disequazioni</a>
+                    <a href="funzioni.html">Funzioni</a>
+                    <a href="geometria-analitica.html">Geometria Analitica</a>
+                    <a href="parabola.html">Parabola</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Disequazioni</h1>
+
+        <!-- DISEQUAZIONI DI SECONDO GRADO -->
+        <section class="teoria">
+            <h2>Disequazioni di secondo grado</h2>
+            <div class="formula-card">
+                <h3>Forma Standard</h3>
+                <div class="formula">
+                    \[ax^2 + bx + c > 0\] oppure \[ax^2 + bx + c < 0\]
+                </div>
+                <p>La risoluzione dipende dal segno di a e dal discriminante Δ = b² - 4ac</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo di Risoluzione</h3>
+                <ul>
+                    <li>Se a > 0: la parabola è rivolta verso l'alto</li>
+                    <li>Se a < 0: la parabola è rivolta verso il basso</li>
+                    <li>Se Δ < 0: la parabola non interseca l'asse x</li>
+                    <li>Se Δ = 0: la parabola è tangente all'asse x</li>
+                    <li>Se Δ > 0: la parabola interseca l'asse x in due punti</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SISTEMI DI DISEQUAZIONI -->
+        <section class="teoria">
+            <h2>Sistemi di disequazioni di secondo grado</h2>
+            <div class="formula-card">
+                <h3>Forma Generale</h3>
+                <div class="formula">
+                    \[\begin{cases} 
+                    a_1x^2 + b_1x + c_1 > 0 \\
+                    a_2x^2 + b_2x + c_2 < 0 
+                    \end{cases}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo di Risoluzione</h3>
+                <ul>
+                    <li>Risolvere ogni disequazione separatamente</li>
+                    <li>Trovare l'intersezione degli intervalli di soluzione</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DISEQUAZIONI FRATTE -->
+        <section class="teoria">
+            <h2>Disequazioni fratte di secondo grado</h2>
+            <div class="formula-card">
+                <h3>Forma Generale</h3>
+                <div class="formula">
+                    \[\frac{ax^2 + bx + c}{dx^2 + ex + f} > 0\] oppure \[\frac{ax^2 + bx + c}{dx^2 + ex + f} < 0\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo di Risoluzione</h3>
+                <ul>
+                    <li>Trovare il campo di esistenza (denominatore ≠ 0)</li>
+                    <li>Studiare il segno di numeratore e denominatore</li>
+                    <li>Applicare la regola dei segni</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DISEQUAZIONI CON VALORE ASSOLUTO -->
+        <section class="teoria">
+            <h2>Disequazioni di secondo grado con valore assoluto</h2>
+            <div class="formula-card">
+                <h3>Forme Base</h3>
+                <div class="formula">
+                    \[|ax^2 + bx + c| > k\] oppure \[|ax^2 + bx + c| < k\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo di Risoluzione</h3>
+                <ul>
+                    <li>Per |...| > k: risolvere ax² + bx + c > k o ax² + bx + c < -k</li>
+                    <li>Per |...| < k: risolvere -k < ax² + bx + c < k</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DISEQUAZIONI IRRAZIONALI -->
+        <section class="teoria">
+            <h2>Le disequazioni irrazionali</h2>
+            <div class="formula-card">
+                <h3>Forme Base</h3>
+                <div class="formula">
+                    \[\sqrt{ax^2 + bx + c} > k\] oppure \[\sqrt{ax^2 + bx + c} < k\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Metodo di Risoluzione</h3>
+                <ul>
+                    <li>Verificare il campo di esistenza (radicando ≥ 0)</li>
+                    <li>Per > k: risolvere il sistema con radicando ≥ 0</li>
+                    <li>Per < k: risolvere il sistema con k > 0</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Casi Particolari</h3>
+                <ul>
+                    <li>Indice pari: considerare il campo di esistenza</li>
+                    <li>Indice dispari: non serve il campo di esistenza</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 

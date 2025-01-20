@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabola - LetsgoskiLetsgo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../content-styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">LetsgoskiLetsgo</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Terza Superiore</a>
+                <div class="dropdown-content">
+                    <a href="disequazioni.html">Disequazioni</a>
+                    <a href="funzioni.html">Funzioni</a>
+                    <a href="geometria-analitica.html">Geometria Analitica</a>
+                    <a href="parabola.html">Parabola</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>La Parabola</h1>
+
+        <!-- DEFINIZIONE E FORMA -->
+        <section class="teoria">
+            <h2>Definizione e forma</h2>
+            <div class="formula-card">
+                <h3>Equazione generale</h3>
+                <div class="formula">
+                    \[y = ax^2 + bx + c\]
+                </div>
+                <ul>
+                    <li>a ≠ 0: coefficiente del termine di secondo grado</li>
+                    <li>b: coefficiente del termine di primo grado</li>
+                    <li>c: termine noto</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Concavità</h3>
+                <ul>
+                    <li>Se a > 0: concavità verso l'alto</li>
+                    <li>Se a < 0: concavità verso il basso</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ELEMENTI CARATTERISTICI -->
+        <section class="teoria">
+            <h2>Elementi caratteristici</h2>
+            <div class="formula-card">
+                <h3>Vertice</h3>
+                <div class="formula">
+                    \[x_v = -\frac{b}{2a}\]
+                    \[y_v = -\frac{\Delta}{4a}\]
+                </div>
+                <p>dove Δ = b² - 4ac è il discriminante</p>
+            </div>
+
+            <div class="formula-card">
+                <h3>Asse di simmetria</h3>
+                <div class="formula">
+                    \[x = -\frac{b}{2a}\]
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>Intersezioni con gli assi</h3>
+                <ul>
+                    <li>Con asse y: punto (0,c)</li>
+                    <li>Con asse x: risolvere ax² + bx + c = 0</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- STUDIO DEL SEGNO -->
+        <section class="teoria">
+            <h2>Studio del segno</h2>
+            <div class="formula-card">
+                <h3>Discriminante</h3>
+                <div class="formula">
+                    \[\Delta = b^2 - 4ac\]
+                </div>
+                <ul>
+                    <li>Se Δ > 0: due radici reali distinte</li>
+                    <li>Se Δ = 0: due radici reali coincidenti</li>
+                    <li>Se Δ < 0: nessuna radice reale</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Segno della parabola</h3>
+                <p>Per a > 0:</p>
+                <ul>
+                    <li>y > 0 per x < x₁ o x > x₂</li>
+                    <li>y < 0 per x₁ < x < x₂</li>
+                </ul>
+                <p>Per a < 0:</p>
+                <ul>
+                    <li>y < 0 per x < x₁ o x > x₂</li>
+                    <li>y > 0 per x₁ < x < x₂</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- POSIZIONI PARTICOLARI -->
+        <section class="teoria">
+            <h2>Posizioni particolari</h2>
+            <div class="formula-card">
+                <h3>Traslazioni</h3>
+                <ul>
+                    <li>Traslazione orizzontale: y = a(x - h)² + k</li>
+                    <li>Traslazione verticale: y = ax² + k</li>
+                </ul>
+            </div>
+
+            <div class="formula-card">
+                <h3>Casi notevoli</h3>
+                <ul>
+                    <li>y = ax²: parabola con vertice nell'origine</li>
+                    <li>y = a(x - h)²: parabola traslata orizzontalmente</li>
+                    <li>y = ax² + k: parabola traslata verticalmente</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
